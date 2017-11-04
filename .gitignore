@@ -6,3 +6,4 @@
 *.iml
 */node_modules/
 **/.idea
+website/src/main/resources/static/

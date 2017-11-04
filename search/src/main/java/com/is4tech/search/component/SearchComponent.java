@@ -1,6 +1,7 @@
 package com.is4tech.search.component;
 
 import com.is4tech.search.domain.SearchResponseDTO;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class SearchComponent {
         this.restTemplate = restTemplate;
     }
 
-    @GetMapping
+    @HystrixCommand(fallbackMethod = "searchFallback")
     public List<SearchResponseDTO> search(@RequestParam String event) {
         logger.info("Looking for Event: {}", event);
         SearchResponseDTO[] result = restTemplate.getForObject("http://inventory/inventory?event={event}",
@@ -32,6 +33,11 @@ public class SearchComponent {
         List<SearchResponseDTO> events = Arrays.asList(result);
         failureCache.put(event, events);
         return events;
+    }
+
+    public List<SearchResponseDTO> searchFallback(@RequestParam String event) {
+        logger.info("Looking for Event in Fallback: {}", event);
+        return failureCache.getOrDefault(event, new ArrayList<>());
     }
 
 }
