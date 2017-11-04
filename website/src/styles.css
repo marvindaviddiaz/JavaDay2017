@@ -1,0 +1,247 @@
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700');*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+/* You can add global styles to this file, and also import other style files */
+
+html {
+	background-color: #ECEFF1;
+}
+
+.loading-content {
+	position: absolute;
+	top: 45%;
+}
+
+.loading-content i {
+	color: #2962FF !important;
+}
+
+/*  GENERIC STYLE   */
+
+h1,h2,h3,h4,h5,
+p,label,a,span,div,
+ul,li,body {
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Quicksand', sans-serif;
+}
+
+.app-header {
+	/*position: absolute;*/
+	/*width: 100%;*/
+	/*left: 0px;*/
+	/*padding: 16.5px 0px;*/
+	/*text-align: left;*/
+	background-color: #337ab7;
+	/*margin: 0px;*/
+	color: #fff;
+}
+
+.img-logo {
+	/*position: fixed;*/
+	/*width: auto;*/
+	height: 50px;
+	/*bottom: 0px;*/
+	/*border-top: 1px solid rgba(255, 255, 255, 0.2);*/
+	/*left: 40px;*/
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:visited {
+	color: #fff;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:visited{
+	color: #fff;
+}
+
+.main-content {
+	padding-left: 0px;
+	margin-top: 50px; /* static header */
+}
+
+.menu-aside-content {
+	position: fixed;
+	height: 100%;
+	/*background-color: #0065C4;*/
+	/*padding-top: 40px;*/
+	padding-bottom: 15px;
+	border-right: 1px solid #E0E0E0;
+	background: #F8F8F8;
+}
+
+.data-content {
+	padding-left: 0px;
+	padding-right: 0px;
+	left: 16.66666667%;
+	background-color: #ECEFF1;
+}
+
+.data-content > div {
+	padding-left: 30px;
+}
+
+.app-div-pagination {
+	position: fixed;
+	bottom: 10px;
+	width: 81%;
+}
+
+
+.btn-radio{
+	border-radius: 100px;
+	padding: 13px 17.5px;
+}
+.btn-radio-md {
+	border-radius: 100px;
+	padding: 7px 11.5px;
+}
+
+.btn-rounded {
+	border-radius: 100px;
+}
+
+
+.form-content {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.row-input {
+	margin-bottom: 15px;
+}
+
+
+.search-component {
+	background-color: #0045A5;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	border-color: transparent;
+	border-radius: 0px;
+}
+
+.search-component h4 {
+	margin: 15px 0px;
+	color: #fff;
+}
+.search-component h4 i {
+	font-size: 0.8em;
+	margin-right: 4px;
+}
+
+.search-component > .container-fluid {
+	padding-left: 0px;
+}
+.search-component .navbar-collapse {
+	/*padding: 0% 15% 0% 10%;*/
+}
+
+.search-component .navbar-collapse form {
+	/*width: 85%;*/
+}
+.search-component .navbar-collapse input {
+	border-radius: 100px 0px 0px 100px;
+	border-color: transparent;
+}
+.search-component .navbar-collapse .input-group-btn {
+	/*width: 15%;*/
+}
+.search-component .navbar-collapse .input-group-btn button:last-child {
+	border-radius: 0px 100px 100px 0px;
+}
+
+/*******************************/
+
+.list-content {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 6px -5px #37474F;
+	position: fixed;
+	height: 75%;
+	width: 81%;
+	margin-top: 65px;
+	/*z-index: 0;*/
+}
+
+.list-content .table-responsive {
+	position: absolute;
+	height: 85%;
+	overflow-y: auto;
+	width: 98%;
+}
+
+.list-content .table th {
+	color: #37474F;
+}
+.list-content .table td {
+	color: #78909C;
+}
+
+.list-content .table th:last-child {
+	text-align: center;
+	/*width: 220px;*/
+}
+
+.list-content .table-responsive tbody tr td:first-child {
+	/*text-align: center;*/
+}
+
+.list-content .fa-check-circle {
+	color: #4CAF50;
+}
+
+.list-content .fa-times-circle{
+	color: #EF5350;
+}
+
+/**********************************/
+
+.title-container {
+	margin-top: 10px;
+}
+
+.title-component {
+	/*position: fixed;*/
+	/*top: 50px;*/
+	/*left: 19.666667%;*/
+	/*color: #fff;*/
+}
+
+.title-component>span {
+	margin-left: 10px;
+}
+
+.create-content {
+	text-align: right;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+
+.create-content > a {
+	/*border: 1px solid #009688;*/
+	/*background-color: rgba(0, 150, 136, 0);*/
+	border-radius: 100px;
+	padding: 12px 17px;
+}
+.create-content > a:hover {
+	/*background-color: rgba(0, 150, 136, 0.4);*/
+	/*border-color: #009688;*/
+}
+
+.audit-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*////////////////////////*/
+
+.clearfix{
+	float:none;
+	clear:both;
+	text-decoration: none;
+	list-style: none;
+}

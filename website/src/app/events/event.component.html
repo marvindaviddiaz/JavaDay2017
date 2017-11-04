@@ -1,0 +1,51 @@
+<div class="col-lg-12 main-content">
+    <div class="col-lg-10 data-content">
+        <div class="container-fluid">
+            <form
+                    class="navbar-form navbar-right"
+                    (ngSubmit)="onSubmitSearch(inputSearch.value)">
+                <div class="input-group">
+                    <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Búsqueda"
+                            #inputSearch
+                            [value]="search"> <span class="input-group-btn">
+                        <button
+                                class="btn btn-default"
+                                type="submit">Buscar</button>
+                        <button
+                                type="button"
+                                class="btn btn-default"
+                                (click)="onSubmitSearch('')">
+                           <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                     </span>
+                </div>
+            </form>
+        </div>
+
+        <div class="table-responsive col-lg-12">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th><span>Event</span></th>
+                    <th><span>Category</span></th>
+                    <th><span>Price</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let entity of list">
+                    <td>{{entity.event}}</td>
+                    <td><a [routerLink]="['../events', entity.event, entity.category]">{{entity.category}}</a></td>
+                    <td>{{entity.price | number : '1.2-2'}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+

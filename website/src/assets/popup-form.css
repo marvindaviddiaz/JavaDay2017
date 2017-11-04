@@ -1,0 +1,35 @@
+label.lbl-first-section{
+    text-align:center;
+}
+label.lbl-second-section{
+    min-width: 150px;
+    width: 200px;
+    text-align:right;
+}
+
+select.sel-option{
+    min-width: 150px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+select.sec-option{
+    min-width: 200px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+select.ope-option{
+    min-width: 25px;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+}
+
+.btn.btn-primary.btn-sm{
+    width: 150px;
+    height: 30px;
+    float: right;
+}
